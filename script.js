@@ -2,6 +2,7 @@ let isPlaying = false;
 let clickCounter = 0;
 let lastTime = 0;
 let audioContext = new (window.AudioContext || window.webkitAudioContext)();
+let timeoutId = null;
 
 const bpmInput = document.getElementById('bpm');
 const bpmValue = document.getElementById('bpmValue');
@@ -44,20 +45,25 @@ function startMetronome() {
     clickCounter = 0;
     lastTime = performance.now();
     startStopButton.textContent = 'Stop';
-    requestAnimationFrame(metronomeLoop);
+    metronomeLoop();
 }
 
 function stopMetronome() {
     isPlaying = false;
     startStopButton.textContent = 'Play';
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+    }
 }
 
-function metronomeLoop(currentTime) {
+function metronomeLoop() {
     if (!isPlaying) return;
 
     const bpm = bpmInput.value;
     const interval = 60000 / bpm; // Intervalo en milisegundos
     const subdivision = parseInt(subdivisionSelect.value);
+    const currentTime = performance.now();
     const elapsedTime = currentTime - lastTime;
 
     if (elapsedTime >= interval) {
@@ -65,7 +71,7 @@ function metronomeLoop(currentTime) {
         lastTime = currentTime - (elapsedTime % interval);
     }
 
-    requestAnimationFrame(metronomeLoop);
+    timeoutId = setTimeout(metronomeLoop, interval - (elapsedTime % interval));
 }
 
 function playClick(subdivision) {
