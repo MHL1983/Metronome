@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Metrónomo
-=======
-# Metrónomo Web
->>>>>>> 96cc27b8650afe62680f03e4fd0d01fdccfbc313
 
 Una aplicación web interactiva diseñada para músicos y estudiantes de música. Permite ajustar el tempo, el volumen y la subdivisión de los tiempos, y genera sonidos de clic precisos utilizando la Web Audio API.
 
@@ -26,8 +22,4 @@ Una aplicación web interactiva diseñada para músicos y estudiantes de música
 - **HTML:** Estructura de la interfaz de usuario.
 - **CSS:** Estilos para una interfaz limpia y responsive.
 - **JavaScript:** Lógica de la aplicación y manejo de eventos.
-<<<<<<< HEAD
 - **Web Audio API:** Generación de sonidos de clic y control de audio.
-=======
-- **Web Audio API:** Generación de sonidos de clic y control de audio.
->>>>>>> 96cc27b8650afe62680f03e4fd0d01fdccfbc313
