@@ -19,8 +19,7 @@ El **Metrónomo** es una aplicación web interactiva diseñada para músicos y e
 
 ## Tecnologías utilizadas
 
-- **HTML:** Para la estructura de la interfaz de usuario.
-- **CSS:** Para los estilos visuales y una interfaz responsive.
-- **JavaScript:** Para la lógica de la aplicación y el manejo de eventos.
-- **Web Audio API:** Para la generación de sonidos de clic y el control de audio.
-
+- **HTML:** Estructura de la interfaz de usuario.
+- **CSS:** Estilos para una interfaz limpia y responsive.
+- **JavaScript:** Lógica de la aplicación y manejo de eventos.
+- **Web Audio API:** Generación de sonidos de clic y control de audio.
