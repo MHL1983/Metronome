@@ -1,4 +1,4 @@
-# Metrónomo
+# Metrónomo Web
 
 El **Metrónomo** es una aplicación web interactiva diseñada para músicos y estudiantes de música. Esta herramienta permite ajustar el tempo, el volumen y la subdivisión de los tiempos, generando sonidos de clic precisos mediante el uso de la **Web Audio API**.
 
