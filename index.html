@@ -8,40 +8,32 @@
 </head>
 <body>
     <div class="container">
-        <h1>Metronome</h1>
-        <div class="controls">
-            <label for="bpm">BPM</label>
-            <span id="bpmValue">120</span>
-            <input type="range" id="bpm" min="30" max="240" value="120">
+        <!-- Logo "Metronome" -->
+        <div class="logo-container">
+            <!-- Ícono SVG -->
+            <svg width="32" height="32" viewBox="0 0 99 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M95 49.4979C94.9989 56.1781 94.8505 62.8612 94.4758 69.5313C94.1015 76.1945 93.7074 83.0533 92.1015 89.5565C92.0005 89.9657 91.8922 90.373 91.7736 90.7774C91.4115 92.0122 90.6167 95.0975 88.8313 94.9888C87.2121 94.8902 86.1004 92.4912 85.4799 91.2893C83.2909 87.0491 81.8697 82.3802 80.4523 77.8409C74.5817 59.0399 70.4208 39.5951 63.0055 21.304C62.4506 19.9353 61.8716 18.5761 61.2582 17.2326C60.7683 16.1596 60.2564 15.0964 59.7139 14.049C59.2903 13.2312 58.8479 12.423 58.3802 11.6297C56.4457 8.34885 53.0922 3.23366 48.5711 4.09659C46.3602 4.51858 44.5953 6.23165 43.2266 7.91425C40.2667 11.5531 38.2714 15.9889 36.4818 20.2883C29.3712 37.372 25.2553 55.6115 19.996 73.3082C18.2466 79.1946 16.5542 85.2834 13.8308 90.8121C13.6619 91.155 13.4866 91.495 13.3025 91.8301C12.7134 92.9023 11.3463 95.5182 9.71442 94.9093C8.0154 94.2753 7.42574 91.344 7.04241 89.8498C5.69211 84.5864 5.2533 79.0569 4.85933 73.6547C3.74435 58.3664 3.73706 42.8949 4.70574 27.5986C4.99721 22.9961 5.38247 18.3843 6.10625 13.8272C6.52962 11.1616 6.97651 8.29464 8.17888 5.84706C8.35562 5.48727 8.55628 5.13543 8.80434 4.81961C10.6119 2.51827 12.6119 5.87655 13.4075 7.35916C16.1386 12.4486 17.7414 18.2219 19.4065 23.7215C24.9216 41.9371 29.0687 60.7395 36.3432 78.3728C38.1703 82.8017 40.2064 87.3896 43.2633 91.1265C44.65 92.8217 46.451 94.5498 48.6991 94.922C53.1632 95.661 56.454 90.63 58.3719 87.3801C58.8397 86.5874 59.2821 85.7798 59.7057 84.9626C60.2483 83.9159 60.7602 82.8534 61.2501 81.781C61.8635 80.4381 62.4425 79.0797 62.9974 77.7116C70.416 59.4218 74.577 39.9761 80.4462 21.1746C81.8697 16.6144 83.2952 11.9187 85.5025 7.66268C86.1214 6.46953 87.2231 4.11019 88.8271 4.00722C90.6281 3.8916 91.426 7.02413 91.7873 8.26519C91.9056 8.67161 92.0137 9.08095 92.1145 9.49205C93.714 16.013 94.1086 22.8849 94.4814 29.5643C94.8514 36.1929 94.9985 42.8341 95 49.4726" stroke="#00E494" stroke-width="8" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
             
+            <!-- Texto del logo -->
+            <div class="logo-text">Metronome</div>
+        </div>  
+        <div class="controls">
             <label for="volume">Volume</label>
             <span id="volumeValue">50</span>
-            <input type="range" id="volume" min="0" max="100" value="50">
-            
+            <input type="range" id="volume" min="0" max="100" value="50" oninput="updateValue('volume', this.value)">
+            <label for="bpm">BPM</label>
+            <span id="bpmValue">120</span>
+            <input type="range" id="bpm" min="30" max="240" value="120" oninput="updateValue('bpm', this.value)">
             <label for="subdivision">Accent</label>
-            <select id="subdivision">
-                <!-- Opciones de subdivisión de 1 a 16 -->
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-            </select>
+            <div class="subdivision">
+                <button class="adjust" onclick="adjustSubdivision(-1)">-</button>
+                <span class="subdivision" id="subdivisionValue">1</span>
+                <button class="adjust" onclick="adjustSubdivision(1)">+</button>
+            </div>
+            <button id="startStop">Play</button>
         </div>
-        <button id="startStop">Play</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
