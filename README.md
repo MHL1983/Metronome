@@ -1,25 +1,21 @@
-# Metrónomo Web
+# Web Metronome
+The **Metronome** is an interactive web application designed for musicians and music students. This tool allows you to adjust the tempo, volume, and subdivision of beats, generating precise click sounds using the **Web Audio API**.
 
-El **Metrónomo** es una aplicación web interactiva diseñada para músicos y estudiantes de música. Esta herramienta permite ajustar el tempo, el volumen y la subdivisión de los tiempos, generando sonidos de clic precisos mediante el uso de la **Web Audio API**.
+## Key Features
+- **BPM (Beats Per Minute) Adjustment:** Allows you to control the metronome's tempo within a configurable range.
+- **Volume Control:** Offers a slider to adjust the volume of the clicks.
+- **Beat Subdivision:** Lets you select the accent on the first beat of each subdivision.
+- **Custom Click Sound:** Uses a square wave to generate a dry and precise click sound.
+- **Start and Stop:** Includes a "Play/Stop" button for easy control of the metronome.
 
-## Características principales
+## Usage Instructions
+1. Adjust the BPM using the slider to set the desired tempo.
+2. Regulate the click volume using the corresponding slider.
+3. Select the beat subdivision from the dropdown menu.
+4. Start or stop the metronome using the **"Play/Stop"** button.
 
-- **Ajuste de BPM (Beats Per Minute):** Permite controlar el tempo del metrónomo dentro de un rango configurable.
-- **Control de volumen:** Ofrece un control deslizante para ajustar el volumen de los clics.
-- **Subdivisión de tiempos:** Permite seleccionar el acento en el primer tiempo de cada subdivisión.
-- **Sonido de clic personalizado:** Utiliza una onda cuadrada para generar un sonido de clic seco y preciso.
-- **Inicio y detención:** Incluye un botón de "Play/Stop" para controlar el metrónomo de manera sencilla.
-
-## Instrucciones de uso
-
-1. Ajuste el BPM utilizando el control deslizante para establecer el tempo deseado.
-2. Regule el volumen de los clics mediante el control deslizante correspondiente.
-3. Seleccione la subdivisión de tiempos desde el menú desplegable.
-4. Inicie o detenga el metrónomo utilizando el botón **"Play/Stop"**.
-
-## Tecnologías utilizadas
-
-- **HTML:** Estructura de la interfaz de usuario.
-- **CSS:** Estilos para una interfaz limpia y responsive.
-- **JavaScript:** Lógica de la aplicación y manejo de eventos.
-- **Web Audio API:** Generación de sonidos de clic y control de audio.
+## Technologies Used
+- **HTML:** Structure of the user interface.
+- **CSS:** Styles for a clean and responsive interface.
+- **JavaScript:** Application logic and event handling.
+- **Web Audio API:** Generation of click sounds and audio control.
