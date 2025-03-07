@@ -1,7 +1,7 @@
 # Web Metronome
 The **Metronome** is an interactive web application designed for musicians and music students. This tool allows you to adjust the tempo, volume, and subdivision of beats, generating precise click sounds using the **Web Audio API**.
 
-<img src="images/beat.jpg">
+<img src="images/beat.png">
 
 ## Key Features
 - **BPM (Beats Per Minute) Adjustment:** Allows you to control the metronome's tempo within a configurable range.
