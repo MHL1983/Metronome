@@ -4,7 +4,7 @@ The **Metronome** is an interactive web application designed for musicians and m
 ## Popular Time Signatures
 **Regular (Simple & Compound) & Irregular Beats:** for more information check images folder.
 
-<img src="images/beat.png">
+<img src="images/beat.jpg">
 
 ## Key Features
 - **BPM (Beats Per Minute) Adjustment:** Allows you to control the metronome's tempo within a configurable range.
