@@ -20,12 +20,20 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .container {
     text-align: center;
 }
 .controls {
     margin-bottom: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .subdivision {
     position: relative;
